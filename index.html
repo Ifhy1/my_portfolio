@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Magical Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="room">
+    <div class="lamp" onclick="toggleTheme()">💡</div>
+    <div class="laptop" onclick="showProjects()">💻</div>
+    <div class="bookshelf" onclick="showSkills()">📚</div>
+    <div class="plant" onclick="showFun()">🪴</div>
+    <div class="note" onclick="showContact()">📝</div>
+    <div class="sparkles"></div>
+  </div>
+
+  <!-- Modals -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content" id="modal-content"></div>
+    <button onclick="closeModal()">Close ✖</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
