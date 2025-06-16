@@ -9,14 +9,38 @@
 </head>
 <body>
   <div class="room">
-    <div class="hello" onclick="showIntro()">👋</div>
-    <div class="lamp" onclick="toggleTheme()">💡</div>
-    <div class="laptop" onclick="showProjects()">💻</div>
-    <div class="bookshelf" onclick="showSkills()">📚</div>
-    <div class="plant" onclick="showFun()">🌼</div>
-    <div class="note" onclick="showContact()">📝</div>
-    <div class="sparkles"></div>
+    <div class="icon-wrapper">
+      <div class="hello" onclick="showIntro()">👋</div>
+      <span class="tooltip">About Me</span>
+    </div>
+    
+    <div class="icon-wrapper">
+      <div class="lamp" onclick="toggleTheme()">💡</div>
+      <span class="tooltip">Toggle Theme</span>
+    </div>
+    
+    <div class="icon-wrapper">
+      <div class="laptop" onclick="showProjects()">💻</div>
+      <span class="tooltip">Projects</span>
+    </div>
+    
+    <div class="icon-wrapper">
+      <div class="bookshelf" onclick="showSkills()">📚</div>
+      <span class="tooltip">Skills</span>
+    </div>
+    
+    <div class="icon-wrapper">
+      <div class="plant" onclick="showFun()">🌼</div>
+      <span class="tooltip">Fun Facts</span>
+    </div>
+    
+    <div class="icon-wrapper">
+      <div class="note" onclick="showContact()">📝</div>
+      <span class="tooltip">Contact Me</span>
+    </div>
+    
   </div>
+  <div class="portfolio-tagline">A frontend developer turning code, design, and passion into impact.</div>
 
   <div id="modal" class="modal hidden">
     <div class="modal-content" id="modal-content"></div>
