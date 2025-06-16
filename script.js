@@ -43,19 +43,39 @@ function showProjects() {
 
 function showSkills() {
   showModal(`
-    📚 <strong>Skills & Tools</strong><br>
-    <ul>
-      <li>HTML, CSS, JavaScript, React, Vue</li>
-      <li>Responsive Design & UI/UX</li>
-      <li>Figma, Git & GitHub, Netlify</li>
-      <li>QA Testing Basics</li>
-    </ul>
+    <h1>📚 <strong>Skills & Tools</h1></strong><br><br>
+
+    <h2>💻 Frontend</h2>
+    <div class="tech-icons">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /><p>HTML</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" /><p>CSS</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><p>JavaScript</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /><p>React</p></div>
+      <div><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind" /><p>Tailwind</p></div>
+    </div>
+
+    <h2>⚙️ Tools</h2>
+    <div class="tech-icons">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" /><p>VS Code</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /><p>GitHub</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /><p>Git</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-plain.svg" alt="Netlify" /><p>Netlify</p></div>
+    </div>
+
+    <h2>🎨 Design</h2>
+    <div class="tech-icons">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" /><p>Figma</p></div>
+    </div>
   `);
 }
 
 function showFun() {
-  showModal("🌼 <strong>Fun Fact</strong><br>I love soft, glowing web designs, magical user interfaces, and expressing my creativity through digital art ✨");
+  showModal(`
+    🌼 <strong>Fun Fact</strong><br>
+    When I’m not designing dreamy interfaces or building smooth web experiences, you’ll probably find me lifting at home, adjusting my glute routine, or syncing workout ideas into tech projects. I treat pixels like reps — intentional, focused, and always aiming for growth. (And yes, my favorite color palette has <em>serious</em> quad energy 💪✨)
+  `);
 }
+
 
 function showContact() {
   showModal(`
