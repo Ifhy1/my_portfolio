@@ -105,12 +105,28 @@ body {
   padding: 30px;
   border-radius: 20px;
   max-width: 400px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
   text-align: center;
   box-shadow: 0 0 20px var(--glow);
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 10px;
 }
 
 .modal button {
-  margin-top: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--accent);
   color: white;
   padding: 10px 20px;
@@ -152,7 +168,25 @@ a {
 
   .modal-content {
     max-width: 90%;
+    padding: 20px 15px 60px;
     font-size: 0.95rem;
+  }
+
+  .modal-content ul {
+    padding-left: 0;
+  }
+
+  .modal-content li {
+    list-style: none;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    font-size: 0.92rem;
+  }
+
+  .modal-content a {
+    font-size: 1rem;
+    display: inline-block;
+    word-break: break-word;
   }
 
   .modal button {
@@ -166,9 +200,17 @@ a {
   }
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
 .social-icons a {
   margin: 0 12px;
   color: var(--text);
+  font-size: 1.5rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -224,4 +266,3 @@ a {
   font-size: 1.1rem;
   color: var(--accent);
 }
-
