@@ -3,7 +3,10 @@ function toggleTheme() {
 }
 
 function showIntro() {
-  showModal("💡 <strong>About Me</strong><br>Creative frontend developer blending beauty and function. Passionate about user-friendly designs, responsive web apps, and magical experiences ✨.");
+  showModal(`
+    👋 <strong>Hi, I'm IHEDIOHA IFEYINWA</strong><br><br>
+    Fueled by <strong>tech</strong>, <strong>creative curiosity</strong>, and <strong>code</strong> — I build with purpose, learn with heart, and create with joy. ✨
+  `);
 }
 
 function showProjects() {

@@ -59,6 +59,19 @@ body {
   box-shadow: 0 0 15px var(--glow);
 }
 
+.hello {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.hello:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--glow);
+}
+
 .toggle-btn {
   position: absolute;
   bottom: 20px;
@@ -152,3 +165,5 @@ a {
     top: 15px;
   }
 }
+
+
